@@ -110,18 +110,18 @@
       <div class="row center">
          
          <div class="row">
-    <form class="col s12">
+    
       <section class="container">
     <div class="row">
     <h3 class="center-align" style="color: #25D366;">CONTACTO</h3>
       <article class="offset-s3">
-        <form method="POST" action="formulario-contacto.php">
+        <form method="POST" action="mail.php">
 
           <div class="col s6 m6">
           <div class="input-field">
             <i class="material-icons prefix" style="color: #25D366;">perm_identity</i>
             <label for="nombre" style="color: #25D366;">Nombre</label>
-            <input type="text" name="nombre" required>
+            <input type="text" name="nombre" id="nombre" required>
           </div>
           </div>
 
@@ -129,7 +129,7 @@
           <div class="input-field">
             <i class="material-icons prefix" style="color: #25D366;">person_pin</i>
             <label for="apellido" style="color: #25D366;">Apellido</label>
-            <input type="text" name="apellido" required>
+            <input type="text" name="apellido" id="apellido" required>
           </div>
           </div>
 
@@ -137,7 +137,7 @@
           <div class="input-field">
             <i class="material-icons prefix" style="color: #25D366;">email</i>
             <label for="email" style="color: #25D366;">Email</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" id="email" required>
           </div>
           </div>
 
@@ -146,7 +146,7 @@
           <div class="input-field">
             <i class="material-icons prefix" style="color: #25D366;">phone</i>
             <label for="number" style="color: #25D366;">Teléfono</label>
-            <input type="number" name="telefono" required>
+            <input type="number" name="telefono" id="telefono" required>
           </div>
           </div>
 
@@ -154,12 +154,18 @@
           <div class="input-field">
             <i class="material-icons prefix" style="color: #25D366;">mode_edit</i>
             <label for="mensaje" style="color: #25D366;">Mensaje</label>
-            <textarea name="mensaje" id="" rows="10" class="materialize-textarea"  length="140" required></textarea>
+            <textarea name="mensaje" id="mensaje" rows="10" class="materialize-textarea"  length="140" required></textarea>
           </div>
           </div>
-
+<!--
+          <div class="form-group">
+                        <textarea id="contenido_mail" name="contenido_mail" class="form-control" style="height: 200px" placeholder="escriba aquí...">
+                         
+                        </textarea>
+                      </div>
+-->
           <p class="center-align">
-            <button class="waves-effect waves-light btn" type="submit" style="background-color: #2DDB2D;"><i class="material-icons right" >send</i>enviar</button>
+            <button class="waves-effect waves-light btn" name="submit" id="submit" type="submit" style="background-color: #2DDB2D;"><i class="material-icons right" >send</i>enviar</button>
           </p>
 
         </form>
@@ -168,7 +174,7 @@
     </div>
   </section>
       
-    </form>
+    
   </div>
 
         
